@@ -1,5 +1,6 @@
 package com.hosting.hoat.Confiq;
 
+import java.util.Arrays;
 import java.util.Collections;
 
 import org.springframework.context.annotation.Bean;
@@ -30,8 +31,9 @@ public class AppConfiq {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
 
-        config.setAllowedOrigins(Collections.singletonList("https://host-alpha-six.vercel.app/")); // Use specific
-                                                                                                   // origin for
+        config.setAllowedOrigins(Arrays.asList(
+                "https://host-alpha-six.vercel.app/",
+                "http://localhost:3000/"));
         // Allow-Credentials
         config.setAllowedMethods(Collections.singletonList("*"));
         config.setAllowedHeaders(Collections.singletonList("*"));
