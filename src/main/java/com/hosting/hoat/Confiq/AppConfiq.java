@@ -33,6 +33,7 @@ public class AppConfiq {
 
         config.setAllowedOrigins(Arrays.asList(
                 "https://host-alpha-six.vercel.app/",
+                "https://hostfront-end.vercel.app/",
                 "http://localhost:3000/"));
         // Allow-Credentials
         config.setAllowedMethods(Collections.singletonList("*"));
